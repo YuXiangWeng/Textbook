@@ -1,17 +1,28 @@
 public class Book 
 { 
-    /** The title of the Book */
-    private String title;
-    /** The price of the Book */
-    private double price;
-    public Book(String bookTitle, double bookPrice){
-        title = bookTitle;
-        price = bookPrice;
-    }
-    public String getTitle(){
-        return title;
-    }
-    public String getBookInfo(){
-        return title + "-"+price;
-    }
-} 
+/** The title of the book */
+private String title;
+/** The price of the book */
+private double price;
+
+
+/** Creates a new Book with given title and price */
+public Book(String bookTitle, double bookPrice)
+{ 
+    title = bookTitle;
+    price = bookPrice;
+}
+
+
+/** Returns the title of the book */
+public String getTitle()
+{   return title;  }
+
+
+/** Returns a string containing the title and price of the Book */
+public String getBookInfo()
+{
+    return title + "-" + price;
+}
+
+}
